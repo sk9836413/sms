@@ -1,0 +1,9 @@
+.side{
+    position: absolute;
+    display: flex;
+    margin-left: 5px;
+    width: 30%;
+    height: 70%;
+    text-align: right;
+    align-items: right;
+}
