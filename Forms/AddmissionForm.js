@@ -1,8 +1,8 @@
 import React from 'react'
 import './AdmissionForm.css'
 import Profilepic from './Profilepic.js'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+
+
 
 export default function AddmissionForm() {
   return (

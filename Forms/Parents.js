@@ -16,7 +16,7 @@ import './ad.css'
 import Date from './Date.js'
 
 
-export default function AdmisionForm() {
+export default function Parents() {
   const blood_group=["A+","A-","B+","B-","O+","O-","AB+","AB-"];
   return (
     <div className="body">
@@ -25,15 +25,14 @@ export default function AdmisionForm() {
     
     
     <div className='admission_form'>
-    <Profilepic className="profilepic"/>
-    <label>Candidate Details</label>
-    <Name Name_Type="Student Name" field1="First Name" field2="Middle Name" field3="Last Name"/>
+    <label>Father's Details</label>
+    <Name Name_Type="Father Name" field1="First Name" field2="Middle Name" field3="Last Name"/>
+    <Name Name_Type=""field1="Occupation" field2="Yearly Income" field3="Mobile Number"/>
+    <label>Mother's Details</label>
+    <Name Name_Type="Mother's Name"field1="First Name" field2="Middle Name" field3="Last Name"/>
+    <Name Name_Type="" field1="Occupation" field2="Yearly Income" field3="Mobile Number"/>
+    
     <div className="opt">
-    
-    <Radio option1="male" option2="female" option3="others" id="radio"/>
-    
-    <Date date_type="Date Of Birth" id="date"/>
-  <Dropdown select_type="Blood Group" select_option = {blood_group} id="dropdown"/>
  </div>
   <Button button_type1="next" button_type2="back"/>
  

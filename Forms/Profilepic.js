@@ -1,4 +1,5 @@
 import React from 'react'
+import avatar from './images/avatar.png';
 
 export default function Profilepic() {
     const uploadedImage = React.useRef(null);
@@ -37,11 +38,12 @@ export default function Profilepic() {
           
           }}
         />
-        <div
+        <div src='avatar'
           style={{
             height: "200px",
             width: "150px",
-            border: "1px dashed black"
+            border: "1px dashed black",
+            borderRadius:"50%"
             
             
             
@@ -53,6 +55,7 @@ export default function Profilepic() {
             style={{
               width: "150px",
               height: "200px",
+              borderRadius:"100%",
               position: "absolute"
               
             }}

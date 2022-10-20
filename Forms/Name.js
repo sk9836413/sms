@@ -6,7 +6,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import './ad.css'
 
-export default function Admision({Name_Type}) {
+export default function Admision({Name_Type,field1,field2,field3}) {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -23,33 +23,32 @@ export default function Admision({Name_Type}) {
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">
-          <Form.Label>First name</Form.Label>
+          <Form.Label>{field1}</Form.Label>
           <Form.Control
             required
             type="text"
-            placeholder="First name"
-            defaultValue="Mark"
+            placeholder={field1}
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         
         <Form.Group as={Col} md="4" controlId="validationCustom02">
-          <Form.Label>Middle Name</Form.Label>
+          <Form.Label>{field2}</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Middle Name"
-            defaultValue="Otto"
+            placeholder={field2}
+        
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
 
         <Form.Group as={Col} md="4" controlId="validationCustom01">
-          <Form.Label>Last name</Form.Label>
+          <Form.Label>{field3}</Form.Label>
           <Form.Control
             required
             type="text"
-            placeholder="Last Name"
-            defaultValue="zukerberg"
+            placeholder={field3}
+            
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>

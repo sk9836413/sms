@@ -4,6 +4,7 @@ import React from 'react';
 function CheckInlineExample({option1,option2,option3}) {
   return (
     <Form>
+      <Form.Label>Gender</Form.Label>
       {[ 'radio'].map((type) => (
         <div key={`inline-${type}`} className="mb-3">
           <Form.Check
