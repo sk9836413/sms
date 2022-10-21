@@ -52,8 +52,29 @@ padding:10px;
 .check{
     margin-left: 50px;
 }
+.button{
+   margin-top:10px; 
+}
+.adress{
+    display:flex;
+}
+.current_Adress{
+    margin-right: 5%;
+}
+.states{
+    display:inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 
 
+
+}
+#drop{
+    margin-right: 5%;
+    position: relative;
+    margin-left: 0px;
+}
 
 
 

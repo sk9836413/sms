@@ -1,13 +1,11 @@
 import Button from 'react-bootstrap/Button';
 
-function BlockExample({button_type1,button_type2}) {
+function BlockExample({button_type1,functions,status}) {
   return (
     <div className="d-grid gap-2">
-      <Button variant="primary" size="lg">
+      <Button variant="primary" size="lg" onClick={functions} disabled = {status}>
         {button_type1}
-      </Button>
-      <Button variant="secondary" size="lg">
-        {button_type2}
+       
       </Button>
     </div>
   );

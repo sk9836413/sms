@@ -19,12 +19,10 @@ import Date from './Date.js'
 export default function AdmisionForm() {
   const blood_group=["A+","A-","B+","B-","O+","O-","AB+","AB-"];
   return (
-    <div className="body">
-    
-    <div className='body'>
+    <div>
     
     
-    <div className='admission_form'>
+    
     <Profilepic className="profilepic"/>
     <label>Candidate Details</label>
     <Name Name_Type="Student Name" field1="First Name" field2="Middle Name" field3="Last Name"/>
@@ -35,10 +33,8 @@ export default function AdmisionForm() {
     <Date date_type="Date Of Birth" id="date"/>
   <Dropdown select_type="Blood Group" select_option = {blood_group} id="dropdown"/>
  </div>
-  <Button button_type1="next" button_type2="back"/>
  
     </div>
-    </div>
-    </div>
+
   )
 }
